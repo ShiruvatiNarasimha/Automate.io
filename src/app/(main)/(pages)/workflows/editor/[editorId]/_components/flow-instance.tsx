@@ -3,12 +3,11 @@ import { Button } from "@/components/ui/button";
 import { useNodeConnections } from "@/providers/connections-provider";
 import { usePathname } from "next/navigation";
 import React, { useCallback, useEffect, useState } from "react";
-
-import { toast } from "sonner";
 import {
   onCreateNodesEdges,
   onFlowPublish,
-} from "./_actions/workflow-connection";
+} from "../_actions/workflow-connections";
+import { toast } from "sonner";
 
 type Props = {
   children: React.ReactNode;
