@@ -23,7 +23,7 @@ const connecetions = (props: Props) => {
               title={connection.title}
               icon={connection.image}
               type={connection.title}
-              // connected={connections}
+              connected={connections}
             />
           ))}
         </section>
