@@ -19,7 +19,7 @@ import { Loader2 } from "lucide-react";
 
 type Props = {};
 
-const ProfileForm = (props: Props) => {
+const ProfileForm = () => {
   const [isLoading, setLoading] = useState(false);
 
   const form = useForm<z.infer<typeof EditUserProfileSchema>>({

@@ -1,4 +1,3 @@
-"use client";
 import React, { useEffect, useRef } from "react";
 import * as LR from "@uploadcare/blocks";
 import { useRouter } from "next/navigation";
@@ -28,24 +27,19 @@ const UploadCareButton = ({ onUpload }: Props) => {
         "file-upload-success",
         handleUpload
       );
-
-      // Clean up the event listener when the component unmounts
-      return () => {
-        ctxProviderRef.current?.removeEventListener(
-          "file-upload-success",
-          handleUpload
-        );
-      };
     }
-  }, [onUpload, router]);
+  }, []);
 
   return (
     <div>
-      <lr-config
+      <lr-config ctx-name="my-uploader" pubkey="bf8d4880e5c10689235c" />
+
+      <lr-file-uploader-regular
         ctx-name="my-uploader"
-        css-src={`${process.env.NEXT_PUBLIC_UPLOAD_CARE_CSS_SRC}${LR.PACKAGE_VERSION} ${process.env.NEXT_PUBLIC_UPLOAD_CARE_CSS_SRC}`}
+        css-src={`https://cdn.jsdelivr.net/npm/@uploadcare/blocks@0.35.2/web/lr-file-uploader-regular.min.css`}
       />
-      <lr-upload-ctx-provider ref={ctxProviderRef} ctx-name="my-uploader" />
+
+      <lr-upload-ctx-provider ctx-name="my-uploader" ref={ctxProviderRef} />
     </div>
   );
 };
