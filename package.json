@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@clerk/clerk-sdk-node": "^5.0.52",
     "@clerk/nextjs": "^5.7.5",
     "@hookform/resolvers": "^3.9.0",
     "@prisma/client": "^5.21.1",
@@ -31,6 +32,7 @@
     "clsx": "^2.1.1",
     "cmdk": "^1.0.0",
     "framer-motion": "^11.11.9",
+    "googleapis": "^144.0.0",
     "lucide-react": "^0.453.0",
     "next": "14.2.15",
     "next-themes": "^0.3.0",
