@@ -43,20 +43,6 @@ const Workflow = ({ description, id, name, publish }: Props) => {
               width={30}
               className="object-contain"
             />
-            <Image
-              src="/notion.png"
-              alt="Google Drive"
-              height={30}
-              width={30}
-              className="object-contain"
-            />
-            <Image
-              src="/discord.png"
-              alt="Google Drive"
-              height={30}
-              width={30}
-              className="object-contain"
-            />
           </div>
           <div className="">
             <CardTitle className="text-lg">{name}</CardTitle>
