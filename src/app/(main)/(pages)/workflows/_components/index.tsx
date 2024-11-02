@@ -8,7 +8,6 @@ const index = async (props: Props) => {
   const workflows = await onGetWorkflows();
 
   return (
-    // this is the section that contain the div that contains the workflows
     <section className=" w-full mt-2">
       <div className=" ">
         {workflows?.length ? (

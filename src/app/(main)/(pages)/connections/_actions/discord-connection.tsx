@@ -13,9 +13,7 @@ export const onDiscordConnect = async (
   guild_name: string,
   guild_id: string
 ) => {
-  //check if webhook id params set
   if (webhook_id) {
-    //check if webhook exists in database with userid
     const webhook = await db.discordWebhook.findFirst({
       where: {
         userId: id,
@@ -29,9 +27,7 @@ export const onDiscordConnect = async (
       },
     });
 
-    //if webhook does not exist for this user
     if (!webhook) {
-      //create new webhook
       await db.discordWebhook.create({
         data: {
           userId: id,
@@ -51,9 +47,7 @@ export const onDiscordConnect = async (
       });
     }
 
-    //if webhook exists return check for duplicate
     if (webhook) {
-      //check if webhook exists for target channel id
       const webhook_channel = await db.discordWebhook.findUnique({
         where: {
           channelId: channel_id,
@@ -67,7 +61,6 @@ export const onDiscordConnect = async (
         },
       });
 
-      //if no webhook for channel create new webhook
       if (!webhook_channel) {
         await db.discordWebhook.create({
           data: {
