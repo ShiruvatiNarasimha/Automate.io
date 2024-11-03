@@ -21,7 +21,6 @@ export const getGoogleListener = async () => {
 };
 
 export const onFlowPublish = async (workflowId: string, state: boolean) => {
-  // console.log(state)
   const published = await db.workflows.update({
     where: {
       id: workflowId,
@@ -79,7 +78,6 @@ export const onCreateNodeTemplate = async (
       });
 
       if (channelList) {
-        //remove duplicates before insert
         const NonDuplicated = channelList.slackChannels.filter(
           (channel) => channel !== channels![0].value
         );
@@ -152,7 +150,6 @@ export const onCreateWorkflow = async (name: string, description: string) => {
   const user = await currentUser();
 
   if (user) {
-    //create new workflow
     const workflow = await db.workflows.create({
       data: {
         userId: user.id,
@@ -161,9 +158,7 @@ export const onCreateWorkflow = async (name: string, description: string) => {
       },
     });
 
-    if (workflow) return { message: "workflow created" };
-    return { message: "Oops! try again" };
-  }
+    
 };
 
 export const onGetNodesEdges = async (flowId: string) => {
