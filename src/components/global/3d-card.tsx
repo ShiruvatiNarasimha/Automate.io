@@ -62,10 +62,7 @@ export const CardContainer = ({
             "flex items-center justify-center relative transition-all duration-200 ease-linear",
             className
           )}
-          style={{
-            transformStyle: "preserve-3d",
-          }}
-        >
+           >
           {children}
         </div>
       </div>
