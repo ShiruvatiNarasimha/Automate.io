@@ -8,7 +8,6 @@ export async function POST(req: Request) {
 
     const email = email_addresses[0]?.email_address;
     console.log("✅", body);
-    //Hey there
 
     await db.user.upsert({
       where: { clerkId: id },
@@ -28,7 +27,6 @@ export async function POST(req: Request) {
       status: 200,
     });
   } catch (error) {
-    console.error("Error updating database:", error);
     return new NextResponse("Error updating user in database", { status: 500 });
   }
 }
