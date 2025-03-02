@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import Sidebar from "@/components/sidebar";
 import InfoBar from "@/components/infobar";
-import { MenuIcon, XIcon } from "lucide-react";
 
 type Props = { children: React.ReactNode };
 
