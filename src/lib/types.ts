@@ -1,4 +1,4 @@
-import { ConnectionProviderProps } from "@/providers/connections-provider";
+rimport { ConnectionProviderProps } from "@/providers/connections-provider";
 import { z } from "zod";
 
 export const EditUserProfileSchema = z.object({
@@ -28,9 +28,7 @@ export type EditorCanvasTypes =
   | "Condition"
   | "AI"
   | "Slack"
-  | "Google Drive"
-  | "Notion"
-  | "Custom Webhook"
+
 
 export type EditorCanvasCardType = {
   title: string;
