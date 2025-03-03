@@ -23,9 +23,6 @@ export type Connection = {
   slackSpecial?: boolean;
 };
 
-export type EditorCanvasTypes =
- 
-
 export type EditorCanvasCardType = {
   title: string;
   description: string;
