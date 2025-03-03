@@ -31,10 +31,6 @@ export type EditorCanvasTypes =
   | "Google Drive"
   | "Notion"
   | "Custom Webhook"
-  | "Google Calendar"
-  | "Trigger"
-  | "Action"
-  | "Wait";
 
 export type EditorCanvasCardType = {
   title: string;
