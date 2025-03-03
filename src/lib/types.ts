@@ -24,11 +24,7 @@ export type Connection = {
 };
 
 export type EditorCanvasTypes =
-  | "Email"
-  | "Condition"
-  | "AI"
-  | "Slack"
-
+ 
 
 export type EditorCanvasCardType = {
   title: string;
