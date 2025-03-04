@@ -17,8 +17,6 @@ export const onPaymentDetails = async () => {
       },
     });
 
-    if (user) {
-      return connection;
-    }
+  
   }
 };
