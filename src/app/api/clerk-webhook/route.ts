@@ -23,7 +23,6 @@ export async function POST(req: Request) {
         profileImage: image_url || "",
       },
     });
-    return new NextResponse("User updated in database successfully", {
     });
   } catch (error) {
     return new NextResponse("Error updating user in database", { status: 500 });
