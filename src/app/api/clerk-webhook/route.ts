@@ -25,6 +25,5 @@ export async function POST(req: Request) {
     });
     });
   } catch (error) {
-    return new NextResponse("Error updating user in database", { status: 500 });
   }
 }
