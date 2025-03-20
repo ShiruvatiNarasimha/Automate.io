@@ -49,7 +49,6 @@ const ModalProvider: React.FC<ModalProviderProps> = ({ children }) => {
     setData({});
   };
 
-  if (!isMounted) return null;
 
   return (
     <ModalContext.Provider value={{ data, setOpen, setClose, isOpen }}>
