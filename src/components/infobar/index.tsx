@@ -12,7 +12,6 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { UserButton } from "@clerk/nextjs";
-// import { UserButton } from '@clerk/nextjs'
 
 type Props = {};
 
