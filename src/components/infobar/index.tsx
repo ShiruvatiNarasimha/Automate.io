@@ -13,7 +13,6 @@ import {
 } from "@/components/ui/tooltip";
 import { UserButton } from "@clerk/nextjs";
 // import { UserButton } from '@clerk/nextjs'
-// import { useBilling } from '@/providers/billing-provider'
 
 type Props = {};
 
