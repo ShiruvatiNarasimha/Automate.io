@@ -10,7 +10,7 @@ import {
   getSlackConnection,
   listBotChannels,
 } from "@/app/(main)/(pages)/connections/_actions/slack-connection";
-import { Option } from "@/components/ui/MultipleSelector";
+
 
 export const onDragStart = (
   event: any,
