@@ -24,7 +24,6 @@ export async function GET() {
 
   const accessToken = clerkResponse[0].token;
   oauth2Client.setCredentials({
-    access_token: accessToken,
   });
 
   const drive = google.drive({
