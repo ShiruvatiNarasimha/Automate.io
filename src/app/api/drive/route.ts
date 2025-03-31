@@ -14,7 +14,6 @@ export async function GET() {
 
   const { userId } = auth();
   if (!userId) {
-    return NextResponse.json({ message: "User not found" });
   }
 
   const clerkResponse = await clerkClient.users.getUserOauthAccessToken(
