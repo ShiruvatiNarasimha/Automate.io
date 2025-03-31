@@ -57,7 +57,6 @@ export async function GET() {
         message: "Something went wrong",
       },
       {
-        status: 500,
       }
     );
   }
