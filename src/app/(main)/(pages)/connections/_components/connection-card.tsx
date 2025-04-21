@@ -41,11 +41,3 @@ const ConnectionCard = ({
                 : "#"
             }
           >
-          </Link>
-        )}
-      </div>
-    </Card>
-  );
-};
-
-export default ConnectionCard;
