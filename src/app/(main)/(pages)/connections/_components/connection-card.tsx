@@ -26,7 +26,6 @@ const ConnectionCard = ({
   connected,
 }: Props) => {
   return (
-    <Card className="flex w-full items-center justify-between">
         <div>
         </div>
             Connected
