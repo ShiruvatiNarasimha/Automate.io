@@ -44,7 +44,6 @@ const ConnectionCard = ({
                 ? process.env.NEXT_PUBLIC_SLACK_REDIRECT!
                 : "#"
             }
-            className=" rounded-lg bg-primary p-2 font-medium text-primary-foreground"
           >
             Connect
           </Link>
