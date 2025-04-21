@@ -27,7 +27,6 @@ const ConnectionCard = ({
 }: Props) => {
   return (
     <Card className="flex w-full items-center justify-between">
-      <CardHeader className="flex flex-col gap-4">
         <div>
         </div>
             Connected
