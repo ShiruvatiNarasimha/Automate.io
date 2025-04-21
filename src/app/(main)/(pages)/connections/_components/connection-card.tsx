@@ -41,7 +41,6 @@ const ConnectionCard = ({
                 : "#"
             }
           >
-            Connect
           </Link>
         )}
       </div>
