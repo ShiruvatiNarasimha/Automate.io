@@ -33,7 +33,6 @@ const ConnectionCard = ({
         </div>
       </CardHeader>
       <div className="flex flex-col items-center gap-2 p-4">
-        {connected[type] ? (
             Connected
         ) : (
           <Link
