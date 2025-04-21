@@ -31,7 +31,6 @@ const ConnectionCard = ({
         <div className="flex flex-row gap-2"></div>
         <div>
           <CardTitle className="text-lg">{title}</CardTitle>
-          <CardDescription>{description}</CardDescription>
         </div>
       </CardHeader>
       <div className="flex flex-col items-center gap-2 p-4">
