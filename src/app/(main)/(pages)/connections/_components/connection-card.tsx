@@ -30,7 +30,6 @@ const ConnectionCard = ({
       <CardHeader className="flex flex-col gap-4">
         <div className="flex flex-row gap-2"></div>
         <div>
-          <CardTitle className="text-lg">{title}</CardTitle>
         </div>
       </CardHeader>
       <div className="flex flex-col items-center gap-2 p-4">
